@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Options de la télécommande SFR Décodeur Plus</title>
+    <script type="text/javascript" src="options.js"></script>
+    <style>
+        textarea.nowrap {
+            white-space: pre;
+            overflow-wrap: normal;
+            overflow-x: scroll;
+        }
+
+        .flex {
+            display: flex;
+            width: 100%;
+        }
+
+        .fieldButton {
+            float: right;
+        }
+
+        .ok {
+            color: green;
+        }
+
+        .ko {
+            color: red;
+        }
+
+        .collapsed {
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Options de la télécommande SFR Décodeur Plus</h1>
+<table>
+    <tbody>
+    <tr class="flex">
+        <td class="flex">
+            <fieldset class="flex">
+                <legend>Etat</legend>
+                <div>
+                    Statut : <b id="txtStatus"></b>
+                </div>
+            </fieldset>
+        </td>
+        <td class="flex">
+            <fieldset class="flex">
+                <legend>Configuration</legend>
+                <div>
+                    <label>Adresse du décodeur <input id="inputBoxHost" type="text"/></label>
+                    <span class="fieldButton">
+                        <input id="btnSave" type="button" value="Enregistrer"/>
+                        <input id="btnCancel" type="button" value="Annuler"/>
+                    </span>
+                </div>
+            </fieldset>
+        </td>
+    </tr>
+    <tr id="rowDebug" class="flex">
+        <td class="flex" colspan="2">
+            <p><input id="btnDebug" type="button" value="Debug >>"/>
+        </td>
+    </tr>
+    <tr id="rowTest" class="flex collapsed">
+        <td class="flex" colspan="2">
+            <fieldset class="flex">
+                <legend>Test code</legend>
+                <div>
+                    <label>Code <input id="inputCode" type="number"/></label>
+                    <label><input id="radioButton" type="radio" name="msgType" value="male" checked> Bouton</label>
+                    <label><input id="radioKeyboard" type="radio" name="msgType" value="male"> Clavier</label>
+                    <input id="btnSendCode" class="fieldButton" type="button" value="Envoyer"/>
+                </div>
+            </fieldset>
+        </td>
+        <td class="flex" colspan="2">
+            <fieldset class="flex">
+                <legend>Test trame</legend>
+                <div>
+                    <label>Trame <input id="inputFrame" type="text" size="50"/></label>
+                    <input id="btnSendFrame" class="fieldButton" type="button" value="Envoyer"/>
+                </div>
+            </fieldset>
+        </td>
+    </tr>
+    <tr id="rowNetwork" class="flex collapsed">
+        <td class="flex" colspan="2">
+            <fieldset class="flex">
+                <legend>Réseau</legend>
+                <div>
+                    <b>Information de connexion</b>
+                </div>
+                <div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td># connexion:</td>
+                            <td id="txtConnectionCount"></td>
+                        </tr>
+                        <tr>
+                            <td>URL:</td>
+                            <td id="txtUrl"></td>
+                        </tr>
+                        <tr>
+                            <td>Etat:</td>
+                            <td id="txtState"></td>
+                        </tr>
+                        <tr>
+                            <td>Protocole:</td>
+                            <td id="txtProtocol"></td>
+                        </tr>
+                        <tr>
+                            <td>Extensions:</td>
+                            <td id="txtExtensions"></td>
+                        </tr>
+                        <tr>
+                            <td>Type de donnée:</td>
+                            <td id="txtBinaryType"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <div>
+                    <b>Logs</b>
+                </div>
+                <div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <textarea id="txtLog" class="nowrap" cols="160" readonly></textarea>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </fieldset>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
