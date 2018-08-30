@@ -1,15 +1,15 @@
 This is a Chrome extension to control TV Box of SFR french ISP.
 
-Cette extension Chrome permet de contrôler la box SFR/Red Décodeur Plus (STB7) via une télécommande virtuelle.
+Cette extension Chrome permet de contrÃ´ler la box SFR/Red DÃ©codeur Plus (STB7) via une tÃ©lÃ©commande virtuelle.
 
-L'utilisation du clavier est également possible quand la télécommande est affichée.
+L'utilisation du clavier est Ã©galement possible quand la tÃ©lÃ©commande est affichÃ©e.
 
 
 ### Installation
 * Installer depuis [Chrome Web Store](https://chrome.google.com/webstore/detail/ioopfmbbhnhmojlejphdamlfimpfgdia)
-* Si nécessaire, configurer l'adresse du décodeur dans les [options de la télécommande](chrome-extension://ioopfmbbhnhmojlejphdamlfimpfgdia/options.html)
+* Si nÃ©cessaire, configurer l'adresse du dÃ©codeur dans les [options de la tÃ©lÃ©commande](chrome-extension://ioopfmbbhnhmojlejphdamlfimpfgdia/options.html)
 
-####Limitations actuelles:
-* les touches "TV Power" et "Source" ne sont pas activées faute de connaissance des codes associés
-* la répétition de certaines touches (Volume +/-, Programme +/-, flèches directionnelles) n'est pas implémentée
-* l'autodétection de l'adresse IP du décodeur n'est possible que sur les OS qui l'implémente nativement (MacOS X) ou via un service complémentaire (Windows avec le service [Apple Bonjour](https://support.apple.com/kb/DL999)). Sur les systèmes ne supportant pas mDNS une configuration manuelle de l'IP est nécessaire dans les options de la télécommande
+### Limitations actuelles:
+* les touches "TV Power" et "Source" ne sont pas activÃ©es faute de connaissance des codes associÃ©s
+* la rÃ©pÃ©tition de certaines touches (Volume +/-, Programme +/-, flÃ¨ches directionnelles) n'est pas implÃ©mentÃ©e
+* l'autodÃ©tection de l'adresse IP du dÃ©codeur n'est possible que sur les OS qui l'implÃ©mente nativement (MacOS X) ou via un service complÃ©mentaire (Windows avec le service [Apple Bonjour](https://support.apple.com/kb/DL999)). Sur les systÃ¨mes ne supportant pas mDNS une configuration manuelle de l'IP est nÃ©cessaire dans les options de la tÃ©lÃ©commande
