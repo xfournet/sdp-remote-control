@@ -15,7 +15,7 @@
         "scripts": [
             "remote.js"
         ],
-        "persistent": false
+        "persistent": true
     },
     "browser_action": {
         "default_popup": "popup.html"
