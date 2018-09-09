@@ -102,14 +102,7 @@ window.onload = () => {
             txtStatus.textContent = "Erreur, veuillez vérifier l'adresse du décodeur";
         }
 
-        let logsTxt = "";
-        for (let log of logs) {
-            if (logsTxt.length > 0) {
-                logsTxt += "\n";
-            }
-            logsTxt += log;
-        }
-        txtLog.textContent = logsTxt;
+        txtLog.textContent = logs.join("\n");
     });
 };
 
