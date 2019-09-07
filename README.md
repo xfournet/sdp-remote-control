@@ -1,5 +1,7 @@
-This is a Chrome extension to control TV Box of SFR french ISP.
+# Ayant changé de FAI ce projet n'est plus maintenu
 
+This is a Chrome extension to control TV Box of SFR french ISP.
+ 
 Cette extension Chrome permet de contrôler la box SFR/Red Décodeur Plus (STB7) via une télécommande virtuelle.
 
 L'utilisation du clavier est également possible quand la télécommande est affichée.
